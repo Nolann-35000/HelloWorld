@@ -20,7 +20,7 @@ public class HelloWorld {
         System.out.println("Bonjour");
         System.out.println("tout le monde");*/
         
-        //Exo 4//
+        /*Exo 4
         Scanner sc = new Scanner(System.in);
         int x = 0;
         int y = 0;
@@ -34,8 +34,23 @@ public class HelloWorld {
         
         System.out.println("Avant la permutation : x = " + x + " y = " + y);
         y = x;
-        System.out.println("Apres la permutation : x = " + z + " y = " + y);
+        System.out.println("Apres la permutation : x = " + z + " y = " + y);*/
         
+        //Exo 5//
+        Scanner sc = new Scanner (System.in);
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        
+        System.out.println("Choisissez une valeur pour a : ");
+        a = sc.nextInt();
+        System.out.println("Choisissez une valeur pour b : ");
+        b = sc.nextInt();
+        
+        c = a + b;
+        c = 2 * c;
+        
+        System.out.println("Voici la valeur de (a + b) * 2 : " + c);
     }
     
 }
