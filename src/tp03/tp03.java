@@ -1,17 +1,21 @@
 import java.util.Scanner;
 public class tp03 {
 
-    public static int carre(int x) {
+    /*public static int carre(int x) {
         return x * x;
     }
 
     public static int cube(int x) {
         return x * x * x;
+    }*/
+
+    public static boolean estPair(int x) {
+        return x % 2 == 0;
     }
 
     public static void main(String[] args) throws Exception {
 
-        //Exo 1//
+        /*Exo 1
 
         int a = 0;
         int b = 0;
@@ -38,6 +42,23 @@ public class tp03 {
 
         else {
             System.out.println("Mauvaise valeur");
+        }*/
+
+        // EXO 4//
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Choisissez un nombre :");
+        int nb = sc.nextInt();
+
+        boolean nbPair = estPair(nb);
+
+        if (nbPair) {
+            System.out.println("Le nombre est pair.");
+        } 
+
+        else {
+            System.out.println("Le nombre est impair.");
         }
     }
 }
